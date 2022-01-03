@@ -1,9 +1,6 @@
 /* HERO */
 
 .hero {
-  // padding-top: 0;
-  // padding-bottom: 0;
-
   background-color: #2f303a;
 }
 
@@ -84,7 +81,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 1200px;
+    width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;

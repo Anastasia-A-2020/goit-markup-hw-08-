@@ -236,7 +236,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .header__link--active {
+  .header__link--active::after {
     top: 77px;
   }
 }
@@ -556,7 +556,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    width: 1200px;
+    width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;

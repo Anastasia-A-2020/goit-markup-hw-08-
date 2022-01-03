@@ -27,18 +27,6 @@
   }
 }
 
-// .menu-toggle .icon-cross{
-//   display: none;
-// }
-
-// .menu-toggle.js-open-menu .icon-cross{
-//   display: block;
-// }
-
-// .menu-toggle.js-open-menu .icon-menu{
-//   display: none;
-// }
-
 .header__navigation {
   @media screen and (max-width: 767px) {
     display: none;
@@ -91,10 +79,10 @@
       width: 100%;
       border-radius: 2px;
       background-color: $accent-color;
-    }
 
-    @media screen and (min-width: $desktop-width) {
-      top: 77px;
+      @media screen and (min-width: $desktop-width) {
+        top: 77px;
+      }
     }
   }
 
