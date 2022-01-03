@@ -54,12 +54,16 @@
     &::after{
       content: "";
       position: absolute;
-      top: 77px;
+      top: 45px;
       display: block;
       height: 4px;
       width: 100%;
       border-radius: 2px;
       background-color: $accent-color;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      top: 77px;
     }
   }
 
