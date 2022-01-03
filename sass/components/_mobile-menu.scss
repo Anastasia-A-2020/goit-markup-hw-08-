@@ -59,6 +59,10 @@
   color: $title-primary-color;
 }
 
+.mobile-menu--active{
+  color: $accent-color;
+}
+
 .mobile-menu__item:not(:last-child){
   margin-bottom: 32px;
 }
@@ -101,7 +105,6 @@
 
   .mobile-menu__social-list{
   display: flex;
-  // margin: -10px;
 
   font-size: 18px;
   line-height: 1.222;
@@ -109,13 +112,11 @@
 }
 
 .mobile-menu__social-item{
-  // margin: 10px;
-  
 
   &:not(:first-child){
     padding-left: 10px;
   }
-  
+
   &:not(:last-child){
     padding-right: 10px;
 

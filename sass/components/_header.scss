@@ -81,7 +81,7 @@
 
   &--active{
     color: $accent-color;
-
+   
     &::after{
       content: "";
       position: absolute;
