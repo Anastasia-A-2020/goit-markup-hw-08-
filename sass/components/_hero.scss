@@ -1,0 +1,102 @@
+/* HERO */
+
+.hero {
+  // padding-top: 0;
+  // padding-bottom: 0;
+
+  background-color: #2f303a;
+}
+
+.hero__title {
+  color: $title-secondary-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $desktop-width){
+    font-size: 44px;
+    line-height: 1.364;
+  }
+}
+
+.hero__button {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: $title-secondary-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero__overlay{
+  width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-color: #C4C4C4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)), url(../../images/mobile/bg-img-mob1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   & {
+      background-image: url(../../images/mobile/bg-img-mob2x.png);
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 768px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)), url(../../images/tablet/bg-img-tab1x.png);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     & {
+        background-image: url(../../images/tablet/bg-img-tab2x.png);
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)), url(../../images/desktop/bg-img-desk1x.png);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     & {
+        background-image: url(../../images/desktop/bg-img-desk2x.png);
+      }
+    }
+  }
+}

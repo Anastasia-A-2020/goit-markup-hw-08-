@@ -1,0 +1,21 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  color: $accent-color;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  text-decoration: none;
+
+  &__color-part--dark{
+    color: #000000;
+  }
+
+  &__color-part--light {
+    color: $title-secondary-color;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}
