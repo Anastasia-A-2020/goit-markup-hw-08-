@@ -165,8 +165,15 @@ img {
   margin-right: 7px;
   margin-left: auto;
   margin-bottom: 0;
-  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 0;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
 }
 
@@ -382,8 +389,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   background-color: #ffffff;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -422,29 +429,29 @@ img {
 
 .mobile-menu__contacts .contacts {
   margin-bottom: 64px;
-  font-size: 24px;
-  line-height: 1.167;
   color: #757575;
 }
 
 .mobile-menu-phone {
   display: block;
   margin-bottom: 32px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), line-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), line-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 34px;
+  line-height: 1.176;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-mail {
   display: block;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), line-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), line-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 24px;
+  line-height: 1.167;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-phone:hover, .mobile-menu-phone:focus,
 .mobile-menu-mail:hover,
 .mobile-menu-mail:focus {
-  font-size: 34px;
-  line-height: 1.176;
   color: #2196f3;
 }
 
@@ -518,7 +525,7 @@ img {
 }
 
 .hero__overlay {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -541,7 +548,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero__overlay {
-    width: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/bg-img-tab1x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bg-img-tab1x.png);
   }
@@ -556,10 +563,11 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/bg-img-desk1x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/bg-img-desk1x.png);
   }
@@ -574,7 +582,12 @@ img {
 
 .features {
   padding-top: 60px;
-  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .features {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1209,6 +1222,7 @@ img {
 .prodact__description {
   font-size: 16px;
   line-height: 1.875;
+  color: #757575;
 }
 
 .prodact__thumb {
